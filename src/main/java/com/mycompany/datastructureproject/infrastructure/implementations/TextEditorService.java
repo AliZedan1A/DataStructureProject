@@ -1,19 +1,19 @@
 package com.mycompany.datastructureproject.infrastructure.implementations;
 
-import com.mycompany.datastructureproject.core.Interfaces.ITextEditor;
+import com.mycompany.datastructureproject.core.Interfaces.ITextEditorService;
 import com.mycompany.datastructureproject.core.models.Result;
 import com.mycompany.datastructureproject.core.models.TextEditorStatus;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class TextEditor implements ITextEditor {
+public class TextEditorService implements ITextEditorService {
 
     private Stack<String> undoStack;
     private Stack<String> redoStack;
     private String currentText;
 
-    public TextEditor() {
+    public TextEditorService() {
         undoStack = new Stack<>();
         redoStack = new Stack<>();
         currentText = "";

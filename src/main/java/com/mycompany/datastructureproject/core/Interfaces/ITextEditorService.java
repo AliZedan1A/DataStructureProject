@@ -11,4 +11,4 @@ public interface ITextEditorService {
     boolean canRedo();
 }
     
-}
+
